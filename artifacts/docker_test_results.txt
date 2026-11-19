@@ -1,0 +1,14 @@
+Image: cayden-digits
+Image ID: sha256:6ac3d91a955c77c789058c012d0aa02bf8abdd49281f4f28b26e5e89fdeb6756
+Platform: linux/arm64
+Docker build: 15 tests passed; PostgreSQL test deferred until Compose runtime.
+
+Runtime with real PostgreSQL 17:
+................                                                         [100%]
+16 passed in 1.61s
+
+Pipeline: 1,797 samples, 1 training run, 450 predictions.
+Accuracy: 0.9644444444444444
+Repeat import: idempotent; existing data and run preserved.
+SQL report queries: executed successfully with psql.
+PostgreSQL test used an isolated schema and cleaned it up.

@@ -1,0 +1,9 @@
+Verification: final ZIP extracted to a separate folder, Python 3.12
+Command: python -m pytest -q
+.......s........                                                         [100%]
+15 passed, 1 skipped in 1.60s
+
+The PostgreSQL integration test is skipped in this local run.
+The full 16-test suite passed against real PostgreSQL through Compose.
+
+See docker_test_results.txt for actual Docker/runtime integration checks.

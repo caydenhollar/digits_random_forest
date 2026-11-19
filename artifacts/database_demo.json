@@ -1,0 +1,48 @@
+{
+  "row_counts": {
+    "samples": 1797,
+    "training_runs": 1,
+    "predictions": 450
+  },
+  "latest_run": {
+    "id": "a83efafb-fc55-494d-b760-2c659f085016",
+    "created_at": "2026-11-19T02:30:24.398838+00:00",
+    "seed": 42,
+    "dataset_sha256": "6d50cb5edb9ad2b4657623cbb5cba8a00d98015fad6e709e180c7ede838e4878",
+    "model_sha256": "fc9668f4453bfeb538bbd7ab358fdf3a919a4b55a35e12bab8fe3ce30de2b86d",
+    "model_file": "runs/a83efafb-fc55-494d-b760-2c659f085016/forest.joblib",
+    "accuracy": 0.9644444444444444,
+    "macro_f1": 0.9641257120157996,
+    "baseline_accuracy": 0.10222222222222223
+  },
+  "latest_errors_by_digit": [
+    {
+      "label": 0,
+      "errors": 2
+    },
+    {
+      "label": 1,
+      "errors": 2
+    },
+    {
+      "label": 2,
+      "errors": 1
+    },
+    {
+      "label": 5,
+      "errors": 2
+    },
+    {
+      "label": 6,
+      "errors": 1
+    },
+    {
+      "label": 8,
+      "errors": 5
+    },
+    {
+      "label": 9,
+      "errors": 3
+    }
+  ]
+}

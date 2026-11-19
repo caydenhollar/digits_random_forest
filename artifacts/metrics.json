@@ -1,0 +1,182 @@
+{
+  "seed": 42,
+  "train_samples": 1347,
+  "test_samples": 450,
+  "accuracy": 0.9644444444444444,
+  "macro_f1": 0.9641257120157996,
+  "baseline_accuracy": 0.10222222222222223,
+  "confusion_matrix": [
+    [
+      43,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      44,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      43,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      46,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      45,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      44,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      44,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      45,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      38,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      42
+    ]
+  ],
+  "mistakes": [
+    {
+      "test_index": 25,
+      "actual": 8,
+      "predicted": 1
+    },
+    {
+      "test_index": 62,
+      "actual": 0,
+      "predicted": 4
+    },
+    {
+      "test_index": 101,
+      "actual": 1,
+      "predicted": 3
+    },
+    {
+      "test_index": 121,
+      "actual": 0,
+      "predicted": 4
+    },
+    {
+      "test_index": 194,
+      "actual": 9,
+      "predicted": 8
+    },
+    {
+      "test_index": 199,
+      "actual": 9,
+      "predicted": 3
+    },
+    {
+      "test_index": 200,
+      "actual": 6,
+      "predicted": 8
+    },
+    {
+      "test_index": 230,
+      "actual": 8,
+      "predicted": 7
+    },
+    {
+      "test_index": 239,
+      "actual": 8,
+      "predicted": 3
+    },
+    {
+      "test_index": 240,
+      "actual": 9,
+      "predicted": 7
+    }
+  ]
+}

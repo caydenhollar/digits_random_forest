@@ -1,0 +1,39 @@
+name: cayden-digits
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: local-demo
+      POSTGRES_DB: digits
+    volumes:
+      - digits_data:/var/lib/postgresql/data
+      - ./sql:/sql:ro
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U student -d digits]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+  app:
+    build: .
+    image: cayden-digits
+    environment:
+      DATABASE_URL: postgresql+psycopg://student:local-demo@db:5432/digits
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./artifacts:/app/artifacts
+    command: [python, digits.py, pipeline]
+  tests:
+    profiles: [test]
+    build: .
+    image: cayden-digits
+    environment:
+      TEST_DATABASE_URL: postgresql+psycopg://student:local-demo@db:5432/digits
+    depends_on:
+      db:
+        condition: service_healthy
+    command: [python, -m, pytest, -q]
+volumes:
+  digits_data:
